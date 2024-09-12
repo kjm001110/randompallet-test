@@ -1,0 +1,179 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>Ramdom Pallet </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://github.com/niklasvh/html2canvas/releases/download/0.5.0-alpha1/html2canvas.js"></script>
+    
+</head>
+
+<body>
+
+<div id= "top" class="flex">
+    <h6 class="r">RANDOM DRAWING</h6>
+    <button id="guestGet" >GALLERRY</button>
+</div>
+
+<!--<div id="topColor">
+    <div id="leftTop">
+       <input type="color" class="sliderPic">
+    </div>
+    <div id="middleTop">
+        <input type="text"  id="randomword" placeholder="ADD Random word">
+        <button id="addWord">ADD</button>
+    </div>
+    <div id="rightTop">
+        <div class="slidersCo"></div>
+    </div>
+</div>-->
+
+
+<div id="cBoxSet" class="flex">
+        <div id="bggr" class="flex" >
+                <div id="bgText" class="flex">
+                    <div id = "aV" class="fNum2"></div>
+                    <div id = "aV1" class="fNum"></div>
+                    <div id = "aV2" class="fNum"></div>
+                    <div id = "aV3" class="fNum"></div>
+                    <div id = "aV4" class="fNum "></div>   
+                </div>
+
+                <div id="cPalette" class="flex">
+                     <div id= "box" class="boxSet">  
+                        <div id = "main" class="M"></div>
+                      
+                    </div>
+
+                    <div id= "box1"class="boxSet">
+                        <div id = "sub1" class="M" ></div>
+                      
+                    </div>
+                        
+                    <div id= "box2"class="boxSet"> 
+                         <div id = "sub2" class="M"></div>
+                         
+                    </div>
+
+                    <div id= "box3"class="boxSet">
+                        <div id = "sub3" class="M" ></div>
+                       
+                    </div>
+
+                    <div id= "box4" class="boxSet">
+                        <div id = "sub4" class="M"></div>
+                          
+                    </div>
+                </div>
+
+        </div>
+</div>
+
+
+<div id = topset class="flex">
+
+        <div id=textBox class="flex">
+           <h2 id=one>Draw "</h2>
+           <h2 id=two></h2>
+           <h2 id=three>" with this color palette!</h2>      
+        </div>
+
+    <div class="bu1">
+        <div id="pickerBox">
+            <h3 id="Picker">Select a color</h3>
+            <input type="color" id = "cPic" class="picPic">
+            <div id = "cV"></div>
+        </div>
+    </div>
+</div>
+
+
+<div id = "container" class="flex"> 
+
+<div id = "left" class="flex">
+
+     <div class="bu2" class="flex">
+        <div id="mid" class="flex">
+
+                <div class="brushset flex">
+                    <div id="circle" class="rangeBox">
+                        <div class="controls__range" >
+                            <input type="range" id="jsRange"
+                            min="0.1" max="40.0" value="20" step="0.1"/>
+                        </div>
+
+                        <div id="brushCircle" data-value="2.5"></div>
+                    </div>
+                </div>
+
+                <div id="circle" class="flex cBox">
+                    <img src="eraser.png" id=eraser onclick="erase()">
+                </div>
+
+               <!--  <div id="colorP"></div> -->
+
+           
+         
+        </div>
+
+     </div>
+
+        <div id=drawSet class="flex">
+              <div id="woldSolo">
+                <h2 id="two00"></h2>
+              </div>
+            <div id= capture>
+              <canvas id='canvasW' class="container" width='1300' height='700' style="border:3px solid black"></canvas>
+            </div>
+        </div>
+ </div>
+
+
+
+<div id="right" class="flex">
+
+    <div class="bu3" class="flex">
+               <div id=capBut>
+                    <div class = "buttons">
+                        <button onclick="Actions()" class="button4 de">RESET</button>
+                        <button id="screenshot" class="button4 de">SCREENSHOT</button>
+                    </div>
+                </div>
+         
+    </div>
+
+
+    <div id=Moni>
+
+        <div id="monitor"></div>
+        </div>
+
+         <div id=buttonsBox>
+            <a id= "download">
+                <button type="button" id="download2" class="saveBut">DOWNLOAD</button>
+            </a>
+            <button id="upload" class="saveBut">UPLOAD</button>
+
+    </div>
+
+
+    <!--<img src="" height="200"/>-->
+
+
+
+    <script type="text/javascript" src="main2.js"></script>
+</div>
+
+
+</div>
+
+
+</body>
+</html>

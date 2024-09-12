@@ -1,0 +1,494 @@
+
+body{margin: 0; background: #F4EFEA}
+
+div{margin: 0;   
+    text-align: center;
+    margin: auto;}
+
+#cV{display: none;}
+
+.flex{display: flex; justify-content: center;}
+
+
+/*상단 검은 고정바*/
+#top{ background: black;
+    height: 45px;
+    width: 100%;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    }
+
+#topColor{ background: white;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 45px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);}
+
+h6{margin: 0;
+    color: white;
+    font-size: 20px; 
+    position: flex; 
+    font-weight:normal;
+    padding-top: 13px;
+    width: 49%;
+    font-family: 'LeferiPoint-SpecialItalicA' ; 
+}
+.r{padding-left: 5px; text-align: left;}
+
+#guestGet{
+    margin: 0;
+    background: black;
+    color: white;
+    font-size: 20px; 
+    position: flex; 
+    font-weight:normal;
+    padding-top: 13px;
+    width: 49%;
+    padding-right: 5px; text-align: right;
+    font-family: 'LeferiPoint-SpecialItalicA' ;}
+
+/*------------------------*/
+
+/*컬러파레트*/
+
+#cBoxSet{
+    padding-top: 45px;
+}
+
+#bggr{
+    flex-wrap: wrap;
+    width:100vw;
+    overflow:auto; 
+    box-shadow: 0px 4px 13px rgba(0,0,0,0.3) ;
+    
+}
+
+#bgText{
+    width: 100vw;
+    padding-top: 6px;
+}
+
+
+#cPalette{
+    overflow:auto; 
+    margin: 50px;
+    padding-top: 13px;
+    /*width:900px;*/
+    height: 90px;
+    justify-content: center;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 150px; 
+    /*border: 2px solid black; */
+    display: flex; 
+    flex-wrap: wrap; 
+    background: white;
+    box-shadow: 4px 4px 13px rgba(0,0,0,0.3) ;
+}
+      
+    .boxSet{ 
+        overflow:auto; 
+        margin: 0; 
+     /*   padding: 5px;*/
+        padding-top: 13px;
+        padding-right: 11px;
+        padding-left: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .fNum{
+            height: 20px;
+            color: gray;
+            mix-blend-mode :luminosity;
+            margin: auto;
+            padding-top: 13px;
+
+            font-size: 13px;
+            text-align: center;
+            font-family: 'GmarketSansMedium';        
+        }
+
+        .fNum2{
+            height: 20px;
+            mix-blend-mode :luminosity;
+            color: gray;
+            margin: auto;
+            padding-top: 13px;
+
+            font-size: 13px;
+            text-align: center; 
+            font-family: 'GmarketSansMedium';
+            font-weight: bold;
+        }
+
+        .M{
+            position:flex;                                                                                                  
+            margin: 0px; 
+            width: 50px;
+            height: 50px;
+            display: flex;
+            border-radius:  50%;
+        }
+
+
+
+/*------------------------*/
+
+
+#textBox{
+    padding-top: 50px;   
+    width: 1300px; 
+    left: 50%;
+    text-align: center;
+    position: flex;
+    top: 13px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#drawSet{
+    margin: 0;
+     margin-left: 3px;
+    padding: 0;
+    display: flex;
+  width: 1300px;
+}
+
+#capture{
+    position: relative;
+    margin: 0;
+    top: 0;}
+
+    #canvasW{
+        position: flex; 
+        background: white;       
+    }
+
+
+
+/*컬러 피커*/
+
+.bu1{
+    padding-top: 60px;
+    padding-bottom: 100px;
+    display: flex;
+    width: 100vw;
+}
+
+#topset{flex-direction: column;}
+
+#pickerBox{width: 200px; height: 130px; }
+    #Picker{
+        top: 0;
+        height: 30px;
+        font-size: 17px;
+        text-align: center;
+        color: black; 
+        padding-top: 5px;
+         font-family: 'LeferiPoint-SpecialItalicA' ; 
+        }
+
+    .picPic{
+        top: 0;
+        display: block;
+        margin: auto;
+        width: 90px;;
+        height:90px;;
+        outline: none;
+      -webkit-appearance: none;
+      padding: 0;
+      border: 0px solid black; 
+      background-color: transparent;
+      border-radius: 50%;
+      }
+
+      .picPic::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow:0 1px 3px rgba(0, 0, 0, 0.08);
+}
+/*--------------*/
+
+
+#container{
+    width: 1308px;
+    display: flex; 
+    justify-content: center;
+    height: 770px;
+}
+
+#left{width: 1300px;
+    height: 770px;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 3px;
+    justify-content: center;
+
+      }
+
+#right{width: 500px;
+position: relative;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 50px;
+    height:100%;
+          }
+
+
+/*드로잉 조절 패널*/
+.bu2{
+    margin: 0;
+    width: 1306px;
+    height: 70px;
+    background: black;
+    z-index: 1;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.bu3{
+    height: 70px;
+    flex-direction: row;
+    margin: 0;
+    width: 500px;
+    background: black;
+    z-index: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
+#mid{margin: auto;height: 70px;}
+
+#circle{
+    display: flex;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+.cBox{width: 50px; margin-left:20px;}
+.rangeBox{width:230px; margin:0;}
+    .brushset{
+        margin: auto;
+        margin-left:20px;
+        width: 230px;
+    }
+
+        #brushCircle{
+            
+            margin: auto;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: black;
+        }
+
+        .controls__range{
+            
+            left: 20%;
+            height: 32px;   
+            vertical-align: middle;
+        }
+
+        input[type=range] {
+          -webkit-appearance: none;
+          overflow: hidden;
+          width: 100%;
+          height: 10%;
+          background: transparent;
+          cursor: pointer;
+          background: #e5e4e3;
+          border-radius: 0; /* iOS */
+          transform: translate(0,50%);
+        }
+
+        input[type=range]:focus {
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 10%;
+          height: 10%;
+          background: white;
+          box-shadow: -100vw 0 0 100vw dodgerblue;
+          border: 0.1px solid white;
+          cursor: pointer;
+        }
+
+
+
+        #eraser{
+            margin: auto;
+            height: 40px;
+           
+            filter: invert();
+            
+        }
+
+/*------------*/
+
+/*캔버스*/
+
+
+    h2{
+        font-size: 30px; 
+        color: black; 
+        font-family: 'GongGothicMedium';
+        font-weight: unset;
+        margin: 0px; 
+        display: inline-block; 
+        flex-wrap: wrap;
+}
+
+
+#woldSolo{
+    width: 1000px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+}
+/*----------------------*/
+
+    .de{
+        font-family: 'GmarketSansMedium';
+            margin: 5px;
+            height: 32px; 
+            padding-left: 5px;
+            padding-right: 5px;
+            top: 50%; 
+            position: flex; 
+            text-align: center;
+            font-size: 17px;             
+            font-weight: bold;
+        }
+    
+
+
+
+#cV{display: none;}
+
+
+
+h4{
+    text-align: center; 
+    font-size: 17px; 
+    color: orangered; 
+    margin: 5px; 
+    width: 700px;
+    transform: transLate(-50%,-50%);
+    top: 53vh;
+    left: 50%; 
+    position: absolute;
+}
+
+
+
+
+#capBut{    
+
+}
+
+.buttons{
+    background: 0 none; 
+    border: 0 none; 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    top: 10px;
+    border-radius: 30px; 
+    }
+.buttons button{ background: 0 none; border: 0 none;overflow: hidden; position: relative; display: inline-block; vertical-align: top; width: 230px; height: 40px;  border: 1px solid white; transition: all 0.5s;border-radius: 30px; color: white; margin: 10px;}
+.buttons button:hover{background: 0 none; border: 0 none;color: black;}
+.buttons button:before{content: ""; z-index: -1; position: absolute; background: white; transition: all 1s;border-radius: 30px; color: black;}
+.buttons .button4:before{left: 0; top: 0; width: 0; height: 100%; border-bottom-right-radius: 50%; border-top-right-radius: 50%;}
+.buttons .button4:hover:before{width: 200%;}
+
+
+#Moni{
+    height: 700px;
+    margin: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.08);
+    border: 3px solid gray;
+}
+
+
+#monitor{
+    padding: 0;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 0;
+}
+
+
+
+#buttonsBox{
+    /*opacity: 0;*/
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    z-index: 10;
+}
+
+.saveBut{
+    color: white;
+    background: black;
+    font-size: 17px;
+    border-radius: 17px;
+    border: 1px solid white;
+    padding: 7px;
+    margin: 10px;
+    padding-left: 10px;
+     padding-right: 10px;
+     font-family: 'GmarketSansMedium';
+
+}
+
+                    @font-face {
+                        font-family: 'GmarketSansMedium';
+                        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+
+                    @font-face {
+                        font-family: 'GongGothicMedium';
+                        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+
+                    @font-face {
+                        font-family: 'LeferiPoint-SpecialItalicA';
+                        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+
+                    @keyframes shift{
+                        from{background-position: 0 0;}
+                        to{background-position: -50vw 0;}
+                    }
